@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grade calculator</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <div class="a">
+    <h1>Grade calculator</h1>
+<div>
+  <label>PHYSICS:</label>
+  <input type="text" id="1"></input>
+  </div>
+
+  <div>
+  <label>CHEMISTRY:</label>
+  <input type="text" id="2"></input>
+  </div>
+
+  <div>
+  <label>MATHS:</label>
+  <input type="text" id="3"></input>
+  </div>
+
+  <div>
+  <button id="submit" type="submit"  onclick="return validate()"> show percentage</button>
+    </div>
+    <div id="panel">
+      <p> Out of 300 your total is <span id="total"></span>.your percentage is <span id="p" ></span>.your grade is"<span id="g"></span>"   you are <span id="result"></span>. </p>
+      <span style="color:red;" id="null" ></span>
+      <span style="color:red;" id="less"></span>
+      <span style="color:red;" id="full"></span>
+      </div>
+    </div>
+  </body>
+<script src="index.js"></script>
+</html>
